@@ -1,6 +1,7 @@
 <script>
-  var seed = 100; //Seed can be any number, integer or float.
-	function pseudoRandomSeed() {
+	var seed = 100; //Seed can be any number, integer or float.
+
+  	function pseudoRandomSeed() {
 		var returnNum = Math.pow(Math.sin(seed), 2);
 		seed += Math.E; //Increment seed.
 		return Math.abs(returnNum - 1E-10); //Maintain [0,1) bounds.
